@@ -4,20 +4,17 @@ function setup() {
 }
 
 function draw() {
-  background (255);
-  blendMode(EXCLUSION);
+  background (0);
 
   let hr = hour();
   let mn = minute();
   let sc = second();
-
 
   noFill();
   strokeWeight(2);
   stroke(0,255,0);
   let end1 = map(sc, 0, 60, 0, 360);
   arc (300, 200, 100, 100, 0, end1 + QUARTER_PI, PIE);
-
 
   strokeWeight(2);
   stroke(255,0,0);
