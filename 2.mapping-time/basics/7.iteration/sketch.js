@@ -47,7 +47,7 @@ function setup() {
   circle(0, 5*spacing, radius)
 
   translate(200, 0)
-  fill('orange')
+  fill('blue')
   for (var i=0; i<6; i++){
     circle(0, i*spacing, radius)
   }

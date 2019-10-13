@@ -7,7 +7,7 @@ function setup() {
 
   
   // display out greeting message in medium grey
-  fill(127) // grey value between 0–255
+  fill(0,255,0) // grey value between 0–255
   textSize(60) // size in pixels
   text("Hello P5 👋", 90, height/2) // (message, x, y)
 

@@ -21,7 +21,7 @@ function drawShape(x, y){
   if (isLeft){
     fill(0)
   }else{
-    fill(255)
+    fill(random(255), random(255),random(255))
   }
 
   var isUpper = y < height/2 // will be 'false' if y is greater than 200
@@ -35,8 +35,8 @@ function drawShape(x, y){
 
 // try adjusting these starting positions and notice how the block of shapes
 // changes based on where each individual shape is positioned
-var horiz = 200
-var vert = 50
+var horiz = 300
+var vert = 180
 
 function draw(){
   background(127)
@@ -68,13 +68,13 @@ function draw(){
    * zero when the shapes have been pushed entirely off the bottom or right edge of the canvas.
    */
 
-  // horiz += 1
-  // if (horiz > width){
-  //   horiz = 0
-  // }
+   horiz += 1
+   if (horiz > width){
+    horiz = 0
+   }
 
-  // vert += 1
-  // if (vert > height){
-  //   vert = 0
-  // }
+   vert += 1
+   if (vert > height){
+     vert = 0
+   }
 }

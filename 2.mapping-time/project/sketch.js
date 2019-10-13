@@ -20,7 +20,7 @@ function draw() {
   // set up typography & drawing-color
   textFont("Anonymous Pro") // ← check index.html to see how it was loaded from google-fonts
   textSize(42) // make it big
-  fill(100, 50, 50)
+  fill(255 * now.sec/60, 25, 30)
 
   // draw the time string to the canvas
   text(now.text.date, 30, 50)

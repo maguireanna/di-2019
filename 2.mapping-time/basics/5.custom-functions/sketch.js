@@ -1,23 +1,27 @@
-// functions example
+var x = 100
 
-// after defining a custom function, we can call it by name from within *other* functions
-function drawCross(aX, aY){
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  //background
+  background (0);
+ 
   stroke(255);
-  line(aX-50, aY, aX+50, aY);
-  line(aX, aY-50, aX, aY+50);
+  strokeWeight(4);
+  noFill()
+if (mouseX > 300){
+  fill(255,0,200);
 }
 
-// regular setup function
-function setup(){
-  createCanvas(400, 300);
-  background(255, 255, 255);
+if (mouseY > 200){
+  x = x+1;
 }
 
-// regular draw function
-function draw(){
-  background(0);
+if (mouseY < 200){
+  x = x-1;
+}
 
-  // mouseX & mouseY are automatic variables that give the current mouse position,
-  // let's pass them to our custom function
-  drawCross(mouseX, mouseY);
+  ellipse(200, 300, x, x);
 }

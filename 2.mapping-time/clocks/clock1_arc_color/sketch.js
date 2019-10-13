@@ -10,17 +10,20 @@ function draw() {
   let mn = minute();
   let sc = second();
 
+  //this is the seconds clock
   noFill();
   strokeWeight(2);
   stroke(0,255,0);
   let end1 = map(sc, 0, 60, 0, 360);
   arc (300, 200, 100, 100, 0, end1 + QUARTER_PI, PIE);
 
+  // this is the minutes clock
   strokeWeight(2);
   stroke(255,0,0);
   let end2 = map(mn, 0, 60, 0, 360);
   arc (300, 300, 100, 100, 0, end2 + QUARTER_PI, PIE)
 
+  //this is the hour clock
   strokeWeight(2);
   stroke(0,0,255);
   let end3 = map(hr % 12, 0, 12, 0, 360);
