@@ -17,3 +17,9 @@ DATE SKETCHES
     sketch number 2 - this strange sketch is an experiment to see if I can use position, shape, and hue to compare the month and the day of the month, if done correctly I would like the xy position of the day shape to correlate to the section of the month it is in.
     
     sketch number 3 - this sketch is very basic and also tracks time like the day and month. this sketch shows color, and position. 
+
+
+FINAL SKETCHES
+
+these are 3 variations of the same design, The main variables here are shape, color, and hue!
+

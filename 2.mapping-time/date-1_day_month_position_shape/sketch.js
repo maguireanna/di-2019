@@ -5,21 +5,23 @@ function setup() {
 
 function draw() {
   background (250, 0, 0);
-  
-  let sc = second();
-  let mn = minute();
-  let hr = hour();
-  let m = month();
-  let d = day();
+
+  var now = clock()
+
+  //let sc = second();
+  //let mn = minute();
+  //let hr = hour();
+  //let m = month();
+  //let d = day();
 
  
 
     for (var x = 0; x <= width; x = x + 50) {
-      let x = map(m, 0, 12, 0, width);
-      let g = map(d, 0, 31, 0, width);
+      let x = map(now.progress.year, 0, 1, 0, width);
+      let g = map(now.day, 0, 31, 0, width);
       
-      let fa = map(m, 0, 12, 1, 100);
-      let th = map(d, 0, 31, 0, 255);
+      let fa = map(now.progress.year, 0, 1, 1, 100);
+      let th = map(now.day, 0, 31, 0, 255);
       
     
     //month
