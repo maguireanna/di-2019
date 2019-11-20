@@ -29,7 +29,7 @@ ellipse (400, 300, 500, 500)
 //week
  
 let hueweek = map(now.progress.week, 0, 1, 0, 255);
-fill(249,100,55), hueweek;
+fill(249,100,55, hueweek);
 let end6 = map(now.progress.week, 0, 1, 1, 360);
 arc (400, 300, 400, 400, 0, end6 + QUARTER_PI, PIE)
 noFill();

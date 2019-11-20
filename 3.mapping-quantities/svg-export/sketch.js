@@ -14,5 +14,5 @@ function setup(){
   // After you've finished drawing, use the `save` command to pick a filename. 
   // Now, every time you reload  the page the browser will download a new SVG 
   // file with that name
-  save('my-sketch.svg')
+  //save('my-sketch.svg')
 }
