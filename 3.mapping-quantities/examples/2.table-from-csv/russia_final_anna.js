@@ -10,7 +10,7 @@ function preload(){
 
 function setup(){
   createCanvas(3200, 3800)
-  background(255)
+  background(25)
 
   // pick one of the three data files to work with and call it 'table'
   var table = totals

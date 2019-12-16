@@ -107,7 +107,7 @@ for (var r=0; r<table.getRowCount(); r++){
       var value = yest.getNum(r, c)
       noStroke();
       let yellowness = map(value, 0, 62,20, 255 )
-      fill (0,0,255, yellowness);
+      fill (0,255,255, yellowness);
       rect(x,y,30, value)
       //text(value, x, y)
       y += rowHeight

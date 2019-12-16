@@ -30,7 +30,7 @@ function setup(){
   var x = 200
   var y = 100
   var rowHeight = 60
-  var colWidth = 40
+  var colWidth = 30
 
   // draw country name labels on the left edge of the table
   textStyle(BOLD)
@@ -60,9 +60,24 @@ for (var r=0; r<table.getRowCount(); r++){
   y = 100
   for (var c=1; c<table.getColumnCount(); c++){
     var value = table.getNum(r, 0)
-    stroke(1);
+    stroke(200);
    noFill ();
-    rect(x,y-30,30, 30)
+    rect(x,y-40,30, 40)
+   // text(value, x, y)
+   y += rowHeight
+  }
+  x += colWidth
+}
+
+//circle on top
+x = 200
+for (var r=0; r<table.getRowCount(); r++){
+  y = 100
+  for (var c=1; c<table.getColumnCount(); c++){
+    var value = table.getNum(r, 0)
+    stroke(200);
+   noFill ();
+    ellipse(x+15,y-20,10, 10)
    // text(value, x, y)
    y += rowHeight
   }
@@ -77,7 +92,7 @@ for (var r=0; r<table.getRowCount(); r++){
     var value = table.getNum(r, 0)
     stroke(1);
    noFill ();
-    rect(x,y,30, 12)
+    rect(x,y,30, 20)
    // text(value, x, y)
    y += rowHeight
   }
@@ -90,7 +105,7 @@ for (var r=0; r<table.getRowCount(); r++){
     y = 100
     for (var c=1; c<table.getColumnCount(); c++){
       var value = table.getNum(r, c)
-      stroke(1);
+      stroke(200);
       noFill ();
       rect(x,y,30, value/10)
       //text(value, x, y)
@@ -138,7 +153,7 @@ for (var r=0; r<table.getRowCount(); r++){
      noStroke();
     fill (0);
      //rect(x,y-30,30, 30)
-     text(value, x+27, y+10)
+     text(value, x+27, y+15)
     y += rowHeight
    }
    x += colWidth

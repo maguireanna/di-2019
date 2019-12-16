@@ -10,7 +10,7 @@ function preload(){
 
 function setup(){
   createCanvas(3200, 3800)
-  background(255)
+  background(25)
 
   // pick one of the three data files to work with and call it 'table'
   var table = totals
@@ -122,7 +122,7 @@ for (var r=0; r<table.getRowCount(); r++){
     for (var c=1; c<table.getColumnCount(); c++){
       var value = und.getNum(r, c)
       let redness = map(value, 0, 57,20, 255)
-      fill (255,0,0, redness);
+      fill (255,255,0, redness);
       rect(x,y,30, value)
       //text(value, x, y)
       y += rowHeight
